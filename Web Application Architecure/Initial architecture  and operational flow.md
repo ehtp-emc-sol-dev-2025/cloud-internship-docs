@@ -9,7 +9,8 @@ This document describes the design and components of the multi-region web applic
 
 ## 2. Architecture Diagram
 
-![System Design](../images/Architecture Diagram.png)
+![System Design](images/Architecture%20Diagram.png)
+
 
 ## 3. Component Breakdown and Role
 
