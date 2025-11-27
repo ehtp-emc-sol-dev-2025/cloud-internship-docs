@@ -86,5 +86,5 @@ Azure Front Door is a **modern cloud content delivery network (CDN)** service th
 - Adjust caching, routing, and WAF rules as needed.
 
 
-## 📚 Sources
+## Sources
 - Microsoft Learn – [Introduction to Azure Front Door](https://learn.microsoft.com/en-us/training/modules/intro-to-azure-front-door/)
