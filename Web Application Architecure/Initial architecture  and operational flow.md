@@ -46,16 +46,3 @@ This document describes the design and components of the multi-region web applic
     * The **SQL Secondary** in Region 2 is promoted to the new **Primary (Read/Write)**.
     * The **SQL Failover Listener** automatically updates its internal record to point all traffic to the new Primary in **Region 2**.
 3.  **Business Continuation:** The application, now running entirely from **Region 2**, continues to process reads and writes using the same listener endpoint, ensuring minimal downtime and no required application connection string changes.
-
-## 5. Security and Resiliency Considerations
-
-* **Global Security:** **Azure Front Door Web Application Firewall (WAF)** is enabled to protect all endpoints against common web vulnerabilities (OWASP Top 10).
-* **Data Resiliency:** The SQL Failover Group provides an established Recovery Point Objective (RPO) and Recovery Time Objective (RTO) for mission-critical data.
-* **Networking:** [Describe VNet Integration or Private Endpoint use, e.g., All PaaS services are integrated into a Virtual Network using Private Link to prevent public internet access.]
-* **Authentication:** [Describe the identity provider, e.g., User authentication is managed via Azure Active Directory (Entra ID) and JWTs for API calls.]
-
-## 6. Next Steps and Improvement Areas
-
-* **Monitoring and Alerting:** Implement **Azure Monitor** and **Application Insights** across both regions to track performance, latency, and proactive failure detection.
-* **Cost Optimization:** Review capacity planning and evaluate the use of **Azure Reservations** for App Service and SQL Database to optimize long-term operational costs.
-* **Testing:** Regularly perform **Disaster Recovery Drills** to test the full failover and failback process, ensuring the RTO and RPO targets are met.
