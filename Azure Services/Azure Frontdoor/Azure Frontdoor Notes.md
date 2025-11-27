@@ -1,4 +1,4 @@
-# Deep Research Documentation: Azure Front Door
+# Azure Front Door
 
 ## Introduction
 Azure Front Door is a **modern cloud content delivery network (CDN)** service that enables organizations to deliver applications with **high performance, reliability, and security**. It integrates **global load balancing**, **intelligent threat protection**, and **web application firewall (WAF)** capabilities to ensure apps are fast, secure, and resilient across regions.
